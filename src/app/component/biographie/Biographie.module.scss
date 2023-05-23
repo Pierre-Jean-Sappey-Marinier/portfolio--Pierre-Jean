@@ -1,0 +1,41 @@
+.container {
+  // display: flex;
+}
+
+.biographie {
+  display: flex;
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 200;
+  padding: 50px 0px 20px 20px;
+  justify-content: start;
+  align-items: start;
+}
+.presentation {
+  color: #ffffff;
+  font-size: 17px;
+  padding-left: 0px;
+}
+.span::before {
+  content: ' ';
+  width: 2px;
+  background: linear-gradient(
+    0deg,
+    rgb(119, 192, 139) 0%,
+    rgb(134, 59, 192) 100%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30px;
+}
+
+.span {
+  padding-left: 20px;
+  margin-left: 38px;
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 1.6;
+  display: block;
+  position: relative;
+}

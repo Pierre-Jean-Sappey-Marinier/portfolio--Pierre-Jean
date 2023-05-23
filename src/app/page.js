@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import styles from './page.module.scss';
 import gmail from './assets/gmail.svg';
-import Biographie from './component/biographie/Biographie';
+import Biographie from './component/Biographie/Biographie';
+import Projects from './component/Projects/Projects';
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
       </div>
 
       <Biographie />
-
+      <Projects />
       <div className={styles.grid}>
         <a
           href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'

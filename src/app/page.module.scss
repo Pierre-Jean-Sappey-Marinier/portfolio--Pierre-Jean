@@ -11,7 +11,6 @@
   max-height: 791px;
   box-sizing: border-box;
 }
-
 .description {
   display: inherit;
   justify-content: inherit;
@@ -28,15 +27,18 @@
   justify-content: space-between;
 }
 .name {
+  padding-left: 20px;
   align-items: start;
-  font-size: 30px;
+  font-size: 50px;
   background: -webkit-linear-gradient(45deg, #00629f, #00ff95 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .surname {
+  padding-left: 20px;
+
   align-items: start;
-  font-size: 30px;
+  font-size: 60px;
   background: -webkit-linear-gradient(45deg, #ffffff, #c4c4c4 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

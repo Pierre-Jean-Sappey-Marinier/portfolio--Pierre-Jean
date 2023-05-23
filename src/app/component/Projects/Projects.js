@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './Biographie.module.scss';
+import s from './Projects.module.scss';
 
-function Biographie() {
+function Projects() {
   return (
     <div className={s.container}>
       <p className={s.biographie}>Bonjour.</p>
@@ -25,4 +25,4 @@ function Biographie() {
   );
 }
 
-export default Biographie;
+export default Projects;

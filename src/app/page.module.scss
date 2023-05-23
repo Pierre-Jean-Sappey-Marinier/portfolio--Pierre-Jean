@@ -1,10 +1,15 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 1280px;
+  // min-height: 100vh;
+  max-height: 791px;
+  box-sizing: border-box;
 }
 
 .description {
@@ -17,7 +22,31 @@
   z-index: 2;
   font-family: var(--font-mono);
 }
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  align-items: start;
+  font-size: 30px;
+  background: -webkit-linear-gradient(45deg, #00629f, #00ff95 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.surname {
+  align-items: start;
+  font-size: 30px;
+  background: -webkit-linear-gradient(45deg, #ffffff, #c4c4c4 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.gmailLogo {
+  color: red;
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .description a {
   display: flex;
   justify-content: center;
@@ -209,15 +238,15 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
+// @media (prefers-color-scheme: dark) {
+//   .gmailLogo {
+//     filter: invert(1);
+//   }
 
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
+//   .logo {
+//     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+//   }
+// }
 
 @keyframes rotate {
   from {

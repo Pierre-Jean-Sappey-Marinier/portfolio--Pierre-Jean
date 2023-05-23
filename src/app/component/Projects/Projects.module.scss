@@ -1,41 +1,87 @@
 .container {
   // display: flex;
+  padding-top: 50px;
 }
 
-.biographie {
+.title {
   display: flex;
   color: #ffffff;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 200;
-  padding: 50px 0px 20px 20px;
+  // padding: 50px 0px 20px 20px;
   justify-content: start;
   align-items: start;
 }
-.presentation {
-  color: #ffffff;
-  font-size: 17px;
-  padding-left: 0px;
-}
-.span::before {
-  content: ' ';
-  width: 2px;
-  background: linear-gradient(
-    0deg,
-    rgb(119, 192, 139) 0%,
-    rgb(134, 59, 192) 100%
-  );
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -30px;
-}
-
-.span {
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
   padding-left: 20px;
-  margin-left: 38px;
-  font-size: 0.9em;
-  font-weight: 100;
-  line-height: 1.6;
-  display: block;
-  position: relative;
+  list-style-type: none;
+  align-items: flex-start;
+
+  a {
+    // display: flex;
+    // flex-direction: column;
+
+    // padding: 20px 0px 0px 20px;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+    // display: inline-block;
+    position: relative;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  a::before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(
+      270deg,
+      rgb(119, 192, 139) 0%,
+      rgb(134, 59, 192) 100%
+    );
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+  }
+  a::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(
+      270deg,
+      rgb(119, 192, 139) 0%,
+      rgb(134, 59, 192) 100%
+    );
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+  }
+  list::before {
+    content: ' ';
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(
+      135deg,
+      rgb(119, 192, 139) 0%,
+      rgb(134, 59, 192) 50%,
+      rgb(119, 192, 139) 100%
+    );
+    opacity: 1;
+    border-top-left-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: -2px;
+    bottom: 0;
+    left: -2px;
+  }
 }

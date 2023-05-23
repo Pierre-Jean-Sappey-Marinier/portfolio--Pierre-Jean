@@ -44,6 +44,13 @@
   -webkit-text-fill-color: transparent;
 }
 
+.section {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  // justify-content: space-between;
+}
+
 .gmailLogo {
   color: red;
   width: 1.5rem;

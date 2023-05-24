@@ -16,8 +16,9 @@ function Biographie() {
           </p>
           <br></br>
           <p>
-            Depuis que j'ai commencé à explorer ce nouveau domaine, ma curiosité
-            n'a cessé de croître.
+            Ma soif d'apprendre et ma curiosité m'ont toujours aidé à être
+            réactif et à proposer des solutions en adéquation avec les
+            stratégies fixées.
           </p>
         </div>
       </span>

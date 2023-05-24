@@ -1,0 +1,67 @@
+.container {
+  // display: flex;
+  width: 700px;
+}
+.domaine {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  font-weight: 400;
+
+  // justify-content: center;
+  align-items: center;
+  width: 35%;
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 100;
+  width: 100%;
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+// .biographie {
+//   display: flex;
+//   color: #ffffff;
+//   font-size: 80px;
+//   font-weight: 200;
+//   padding: 50px 0px 20px 20px;
+//   justify-content: start;
+//   align-items: start;
+// }
+.title {
+  font-size: 30px;
+  padding: 50px 0px 20px 20px;
+}
+.span::before {
+  content: ' ';
+  width: 2px;
+  background: linear-gradient(
+    0deg,
+    rgb(119, 192, 139) 0%,
+    rgb(134, 59, 192) 100%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30px;
+}
+
+.span {
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  margin-left: 38px;
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 2;
+}

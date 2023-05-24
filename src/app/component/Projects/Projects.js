@@ -7,15 +7,12 @@ function Projects() {
       <p className={s.title}>Projets</p>
       <div className={s.list}>
         <a
-          href='https://pierre-jean-sappey-marinier.github.io/Motus/'
+          href='https://pierre-jean-sappey-marinier.github.io/Kasa/'
           target='_blank'
         >
           Kasa - Openclassroom
         </a>
-        <a
-          href='https://pierre-jean-sappey-marinier.github.io/Motus/'
-          target='_blank'
-        >
+        <a href='' target='_blank'>
           Mon Vieux Grimoire - Openclassroom
         </a>
         <a
@@ -24,17 +21,20 @@ function Projects() {
         >
           Motus - Perso
         </a>
-        <a
-          href='https://pierre-jean-sappey-marinier.github.io/Motus/'
-          target='_blank'
-        >
+        <a href='' target='_blank'>
           Sophie Photographe - Openclassroom
         </a>
         <a
-          href='https://pierre-jean-sappey-marinier.github.io/Motus/'
+          href='https://pierre-jean-sappey-marinier.github.io/Site_Booki_Sappey-Marinier_Pierre-Jean/'
           target='_blank'
         >
           Booki - Openclassroom
+        </a>
+        <a
+          href='https://pierre-jean-sappey-marinier.github.io/NinacarducciVite/'
+          target='_blank'
+        >
+          Nina Carducci - Openclassroom
         </a>
       </div>
     </div>

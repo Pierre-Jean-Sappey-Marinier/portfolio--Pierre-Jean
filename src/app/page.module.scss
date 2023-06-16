@@ -1,5 +1,6 @@
 .main {
-  display: flex;
+  position: relative;
+  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -8,9 +9,10 @@
   margin-bottom: 0;
   max-width: 1280px;
   // min-height: 100vh;
-  max-height: 791px;
+  max-height: 700px;
   box-sizing: border-box;
 }
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -20,12 +22,30 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  p {
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(var(--callout-rgb), 0.5);
+    border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+    border-radius: var(--border-radius);
+  }
 }
+
 .header {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .name {
   padding-left: 20px;
   align-items: start;
@@ -34,6 +54,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .surname {
   padding-left: 20px;
 
@@ -49,27 +70,14 @@
   flex-direction: row;
   gap: 50px;
   // justify-content: space-between;
+  align-items: baseline;
+  align-items: center;
 }
 
 .gmailLogo {
   color: red;
   width: 1.5rem;
   height: 1.5rem;
-}
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
 }
 
 .code {
@@ -116,8 +124,9 @@
   // justify-content: space-between;
 }
 .skills {
-  // display: flex;
-  padding-left: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .center {

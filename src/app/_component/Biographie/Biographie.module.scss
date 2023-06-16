@@ -20,11 +20,7 @@
 .span::before {
   content: ' ';
   width: 2px;
-  background: linear-gradient(
-    0deg,
-    rgb(119, 192, 139) 0%,
-    rgb(134, 59, 192) 100%
-  );
+  background: linear-gradient(0deg, #9a9807, #8b0000);
   position: absolute;
   top: 0;
   bottom: 0;

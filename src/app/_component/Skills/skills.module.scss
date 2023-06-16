@@ -1,6 +1,8 @@
 .container {
   // display: flex;
   width: 700px;
+  padding-bottom: 70px;
+  // padding-top: 100px;
 }
 .domaine {
   display: flex;
@@ -11,7 +13,8 @@
   // justify-content: center;
   align-items: center;
   width: 35%;
-  & ul {
+
+  ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -23,7 +26,8 @@
   gap: 20px;
   font-weight: 100;
   width: 100%;
-  & ul {
+
+  ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -42,14 +46,14 @@
   font-size: 30px;
   padding: 50px 0px 20px 20px;
 }
+
+.resume {
+  color: #00ff95;
+}
 .span::before {
   content: ' ';
   width: 2px;
-  background: linear-gradient(
-    0deg,
-    rgb(119, 192, 139) 0%,
-    rgb(134, 59, 192) 100%
-  );
+  background: linear-gradient(0deg, #9a9807, #8b0000);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -64,4 +68,8 @@
   font-size: 0.9em;
   font-weight: 100;
   line-height: 2;
+}
+
+.resume {
+  display: flex;
 }

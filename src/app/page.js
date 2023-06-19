@@ -6,6 +6,7 @@ import Projects from './_component/Projects/Projects';
 import Skills from './_component/Skills/Skills';
 // import ArbreCompetence from './_assets/arbreComp.png';
 import BoardSkill from './_component/BoardSkills/BoardSkill';
+import Footer from './_component/Footer/Footer';
 export default function Home() {
   function toggleFullScreen(id) {
     document.getElementById(id).requestFullscreen();
@@ -23,11 +24,14 @@ export default function Home() {
         <Skills />
         {/* <Projects /> */}
       </div>
+      {/* <div className={styles.boardSkill}> */}
+      <BoardSkill />
+      {/* </div> */}
       <div className={styles.skills}>
         {/* <Skills /> */}
         <Projects />
-        <BoardSkill />
       </div>
+      <Footer />
     </main>
   );
 }

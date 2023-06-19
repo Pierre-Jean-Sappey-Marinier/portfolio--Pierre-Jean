@@ -18,22 +18,25 @@ export default function BoardSkill() {
   };
 
   return (
-    <div className={s.linkToSkills}>
-      <Link
-        className={s.testbuttons}
-        href='../../_assets/arbreComp.png'
-        target='_blank'
-      >
-        <div className={s.testbutton}> Carte de compétences</div>
-      </Link>
+    <div className={s.container}>
+      <p className={s.title}>L'essentiel.</p>
+      <div className={s.linkToSkills}>
+        <Link
+          className={s.testbuttons}
+          href='../../_assets/arbreComp.png'
+          target='_blank'
+        >
+          <div className={s.testbutton}> Carte de compétences</div>
+        </Link>
 
-      <Link
-        className={s.testbuttons}
-        href='../../_assets/cv.pdf'
-        target='_blank'
-      >
-        <div className={s.testbutton}> CV</div>
-      </Link>
+        <Link
+          className={s.testbuttons}
+          href='../../_assets/cv.pdf'
+          target='_blank'
+        >
+          <div className={s.testbutton}> CV</div>
+        </Link>
+      </div>
     </div>
   );
 }

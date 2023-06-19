@@ -9,11 +9,11 @@ function Biographie() {
         <div className={s.presentation}>
           <p>
             En tant que développeur junior, je me suis orienté vers le{' '}
-            <strong>front-end</strong>
-            après une reconversion professionnelle réussie. C&apos;est sur des
-            technologies telles que <strong>React</strong>, JavaScript et{' '}
-            <strong>Next.js</strong> que je me suis tourné pour créer des
-            expériences web dynamiques et conviviales.
+            <strong>front-end</strong> après une reconversion professionnelle
+            réussie. C&apos;est sur des technologies telles que{' '}
+            <strong>React</strong>, JavaScript et <strong>Next.js</strong> que
+            je me suis tourné pour créer des expériences web dynamiques et
+            conviviales.
           </p>
           <br></br>
           <p>

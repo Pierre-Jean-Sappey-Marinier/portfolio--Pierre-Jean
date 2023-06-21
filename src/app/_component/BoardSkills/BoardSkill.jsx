@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-// import ArbreCompetence from '../../../public/_assets/arbreComp.png';
+// import ArbreCompetence from '../../../public/assets/arbreComp.png';
 // import './BoardSkill.scss';
 import s from './BoardSkill.module.scss';
 
@@ -23,7 +23,7 @@ export default function BoardSkill() {
       <div className={s.linkToSkills}>
         <Link
           className={s.testbuttons}
-          href='../../_assets/arbreComp.png'
+          href='../../assets/arbreComp.png'
           target='_blank'
         >
           <div className={s.testbutton}> Carte de compétences</div>
@@ -31,7 +31,7 @@ export default function BoardSkill() {
 
         <Link
           className={s.testbuttons}
-          href='../../_assets/cv.pdf'
+          href='../../assets/cv.pdf'
           target='_blank'
         >
           <div className={s.testbutton}> CV</div>

@@ -4,7 +4,7 @@ import styles from './page.module.scss';
 import Biographie from './_component/Biographie/Biographie';
 import Projects from './_component/Projects/Projects';
 import Skills from './_component/Skills/Skills';
-// import ArbreCompetence from './_assets/arbreComp.png';
+// import ArbreCompetence from './assets/arbreComp.png';
 import BoardSkill from './_component/BoardSkills/BoardSkill';
 import Footer from './_component/Footer/Footer';
 export default function Home() {

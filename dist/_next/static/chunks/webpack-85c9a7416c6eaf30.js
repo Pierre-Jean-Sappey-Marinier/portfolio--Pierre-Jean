@@ -116,7 +116,7 @@
     (d.miniCssF = function (e) {
       return (
         'static/css/' +
-        { 185: '92aad1e95ea9226f', 931: '84901406c44fa48e' }[e] +
+        { 185: '92aad1e95ea9226f', 931: '7c7724cfc15e084b' }[e] +
         '.css'
       );
     }),

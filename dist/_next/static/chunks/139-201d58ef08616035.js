@@ -73,7 +73,7 @@
       'use strict';
       function r(e) {
         var t, r;
-        (t = self._next_s),
+        (t = self.next_s),
           (r = () => {
             e();
           }),
@@ -181,8 +181,8 @@
       let _ = r.u,
         b = {};
       (r.u = (e) => encodeURI(b[e] || _(e))),
-        (self._next_require__ = r),
-        (self._next_chunk_load__ = (e) => {
+        (self.next_require__ = r),
+        (self.next_chunk_load__ = (e) => {
           if (!e) return Promise.resolve();
           let [t, n] = e.split(':');
           return (b[t] = n), r.e(t);
@@ -209,7 +209,7 @@
       'loading' === document.readyState
         ? document.addEventListener('DOMContentLoaded', R, !1)
         : R();
-      let j = (self._next_f = self._next_f || []);
+      let j = (self.next_f = self.next_f || []);
       j.forEach(E), (j.push = E);
       let S = new Map();
       function T(e) {
@@ -258,7 +258,7 @@
             )
           ),
           t = { onRecoverableError: f.default },
-          r = '_next_error__' === document.documentElement.id,
+          r = 'next_error__' === document.documentElement.id,
           n = r
             ? l.default.createRoot(v, t)
             : i.default.startTransition(() => l.default.hydrateRoot(v, e, t));
@@ -336,7 +336,7 @@
               e.style.cssText = 'position:absolute';
               let t = document.createElement('div');
               t.setAttribute('aria-live', 'assertive'),
-                t.setAttribute('id', '_next-route-announcer__'),
+                t.setAttribute('id', 'next-route-announcer__'),
                 t.setAttribute('role', 'alert'),
                 (t.style.cssText =
                   'position:absolute;border:0;height:1px;margin:-1px;padding:0;width:1px;clip:rect(0 0 0 0);overflow:hidden;white-space:nowrap;word-wrap:normal');
@@ -4068,7 +4068,7 @@
             var r = l.get(t.id);
             if ('fulfilled' === r.status) var n = r.value;
             else throw r.reason;
-          } else n = globalThis._next_require__(t.id);
+          } else n = globalThis.next_require__(t.id);
           var u =
             '*' === t.name
               ? n
@@ -4138,7 +4138,7 @@
                       var u = t[n],
                         o = a.get(u);
                       if (void 0 === o) {
-                        (o = globalThis._next_chunk_load__(u)), r.push(o);
+                        (o = globalThis.next_chunk_load__(u)), r.push(o);
                         var c = a.set.bind(a, u, null);
                         o.then(c, i), a.set(u, o);
                       } else null !== o && r.push(o);
@@ -4147,7 +4147,7 @@
                       if ((t = l.get(e.id)))
                         return 'fulfilled' === t.status ? null : t;
                       var s = Promise.all(r).then(function () {
-                        return globalThis._next_require__(e.id);
+                        return globalThis.next_require__(e.id);
                       });
                       return (
                         s.then(

@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "deploy": "cp ./.nojekyll ./dist && git add ./dist && git commit --amend --no-edit && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
     "test": "jest --watchAll"
   },
   "dependencies": {
@@ -22,4 +23,3 @@
     "react-testing-library": "^8.0.1"
   }
 }
-

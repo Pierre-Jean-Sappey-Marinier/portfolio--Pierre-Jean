@@ -1,12 +1,6 @@
 module.exports = {
-  // experimental: {
-  //   outputFileTracingExcludes: {
-  //     // '/api/hello': ['./un-necessary-folder/**/*'],
-  //   },
-  //   outputFileTracingIncludes: {
-  //     '/_assets': ['./_assets/**/*'],
-  //   },
-  // },
+  basePath:
+    process.env.NODE_ENV === 'production' ? '/portfolio--Pierre-Jean' : '',
   output: 'export',
   distDir: 'dist',
   webpack(config) {

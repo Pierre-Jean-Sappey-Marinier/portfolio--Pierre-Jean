@@ -19,7 +19,7 @@ export default function BoardSkill() {
 
   return (
     <div className={s.container}>
-      <p className={s.title}>L'essentiel.</p>
+      <p className={s.title}>L&apos;essentiel.</p>
       <div className={s.linkToSkills}>
         <Link
           className={s.testbuttons}

@@ -35,7 +35,7 @@ function Projects() {
           Motus - Perso
         </Link>
         <div className={s.description}>
-          Création d'un jeu de motus en React.js
+          Création d&apos;un jeu de motus en React.js
         </div>
         <Link href='' target='_blank'>
           Sophie Photographe - Openclassroom
@@ -54,8 +54,8 @@ function Projects() {
           Booki - Openclassroom
         </Link>
         <div className={s.description}>
-          Création de la page d'accueil d&apos;une agence de voyage en HTML et
-          CSS tout en respectant une maquette figma, le web sémantique et la
+          Création de la page d&apos;accueil d&apos;une agence de voyage en HTML
+          et CSS tout en respectant une maquette figma, le web sémantique et la
           validité générale du code
         </div>
         <Link

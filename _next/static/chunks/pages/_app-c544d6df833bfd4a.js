@@ -2,7 +2,7 @@
   [888],
   {
     1597: function (n, _, u) {
-      (window._next_P = window._next_P || []).push([
+      (window.next_P = window.next_P || []).push([
         '/_app',
         function () {
           return u(3439);

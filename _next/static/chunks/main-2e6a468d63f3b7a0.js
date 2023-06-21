@@ -326,7 +326,7 @@
         H = (0, w.default)(),
         W = (e) => [].slice.call(e),
         V = !1;
-      self._next_require__ = n;
+      self.next_require__ = n;
       class q extends y.default.Component {
         componentDidCatch(e, t) {
           this.props.fn(e, t);
@@ -372,8 +372,8 @@
       }
       async function $(e) {
         void 0 === e && (e = {}),
-          (a = JSON.parse(document.getElementById('_next_DATA__').textContent)),
-          (window._next_DATA__ = a),
+          (a = JSON.parse(document.getElementById('next_DATA__').textContent)),
+          (window.next_DATA__ = a),
           (h = a.defaultLocale);
         let t = a.assetPrefix || '';
         if (
@@ -395,12 +395,11 @@
           return o.routeLoader.onEntrypoint(t, n);
         };
         return (
-          window._next_P &&
-            window._next_P.map((e) => setTimeout(() => s(e), 0)),
-          (window._next_P = []),
-          (window._next_P.push = s),
+          window.next_P && window.next_P.map((e) => setTimeout(() => s(e), 0)),
+          (window.next_P = []),
+          (window.next_P.push = s),
           ((u = (0, O.default)()).getIsSsr = () => r.isSsr),
-          (i = document.getElementById('_next')),
+          (i = document.getElementById('next')),
           { assetPrefix: t }
         );
       }
@@ -428,7 +427,7 @@
                 D.PathnameContextProviderAdapter,
                 {
                   router: r,
-                  isAutoExport: null != (t = self._next_DATA__.autoExport) && t,
+                  isAutoExport: null != (t = self.next_DATA__.autoExport) && t,
                 },
                 y.default.createElement(
                   _.RouterContext.Provider,
@@ -732,8 +731,8 @@
         } catch (e) {
           t = (0, j.getProperError)(e);
         }
-        window._next_PRELOADREADY &&
-          (await window._next_PRELOADREADY(a.dynamicIds)),
+        window.next_PRELOADREADY &&
+          (await window.next_PRELOADREADY(a.dynamicIds)),
           (r = (0, M.createRouter)(a.page, a.query, l, {
             initialProps: a.props,
             pageLoader: o,
@@ -1126,7 +1125,7 @@
               'p',
               {
                 'aria-live': 'assertive',
-                id: '_next-route-announcer__',
+                id: 'next-route-announcer__',
                 role: 'alert',
                 style: o,
               },
@@ -1711,7 +1710,7 @@
                   nonce: v,
                   dangerouslySetInnerHTML: {
                     __html:
-                      '(self._next_s=self._next_s||[]).push(' +
+                      '(self.next_s=self.next_s||[]).push(' +
                       JSON.stringify([n]) +
                       ')',
                   },
@@ -1723,7 +1722,7 @@
                   nonce: v,
                   dangerouslySetInnerHTML: {
                     __html:
-                      '(self._next_s=self._next_s||[]).push(' +
+                      '(self.next_s=self.next_s||[]).push(' +
                       JSON.stringify([0, { ...d }]) +
                       ')',
                   },
@@ -1739,7 +1738,7 @@
         }
         return null;
       }
-      Object.defineProperty(g, '_nextScript', { value: !0 });
+      Object.defineProperty(g, 'nextScript', { value: !0 });
       let y = g;
       ('function' == typeof t.default ||
         ('object' == typeof t.default && null !== t.default)) &&
@@ -2659,7 +2658,7 @@
               if (
                 (!u ||
                   i ||
-                  u.includes('_next_data_catchall') ||
+                  u.includes('next_data_catchall') ||
                   u.includes('/_error') ||
                   u.includes('/404') ||
                   (i = u),
@@ -3234,7 +3233,7 @@
             }
             B &&
               '/_error' === this.pathname &&
-              (null == (c = self._next_DATA__.props)
+              (null == (c = self.next_DATA__.props)
                 ? void 0
                 : null == (f = c.pageProps)
                 ? void 0
@@ -3269,7 +3268,7 @@
               )
                 throw Error('Unexpected middleware effect on ' + this.pathname);
               '/_error' === this.pathname &&
-                (null == (N = self._next_DATA__.props)
+                (null == (N = self.next_DATA__.props)
                   ? void 0
                   : null == (L = N.pageProps)
                   ? void 0
@@ -3422,8 +3421,8 @@
               (x && ('/_error' === n || '/404' === n) && (x.effect = void 0),
               h &&
                 (x
-                  ? (x.json = self._next_DATA__.props)
-                  : (x = { json: self._next_DATA__.props })),
+                  ? (x.json = self.next_DATA__.props)
+                  : (x = { json: self.next_DATA__.props })),
               e(),
               (null == x
                 ? void 0
@@ -3847,7 +3846,7 @@
                 this._bfl_d.import(r));
           }
           (this.events = $.events), (this.pageLoader = o);
-          let P = (0, p.isDynamicRoute)(e) && self._next_DATA__.autoExport;
+          let P = (0, p.isDynamicRoute)(e) && self.next_DATA__.autoExport;
           if (
             ((this.basePath = ''),
             (this.sub = f),
@@ -3856,9 +3855,9 @@
             (this.isSsr = !0),
             (this.isLocaleDomain = !1),
             (this.isReady = !!(
-              self._next_DATA__.gssp ||
-              self._next_DATA__.gip ||
-              (self._next_DATA__.appGip && !self._next_DATA__.gsp) ||
+              self.next_DATA__.gssp ||
+              self.next_DATA__.gip ||
+              (self.next_DATA__.appGip && !self.next_DATA__.gsp) ||
               (!P && !self.location.search)
             )),
             (this.state = {

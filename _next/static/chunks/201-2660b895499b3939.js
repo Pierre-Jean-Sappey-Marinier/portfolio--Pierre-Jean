@@ -243,7 +243,7 @@
             }, [z]),
             W = N.loader || c.default;
           delete N.loader;
-          let F = '_next_img_default' in W;
+          let F = 'next_img_default' in W;
           if (F) {
             if ('custom' === D.loader)
               throw Error(
@@ -1114,7 +1114,7 @@
             return n;
           },
         }),
-        (r._next_img_default = !0);
+        (r.next_img_default = !0);
       let n = r;
     },
     8923: function (e, t, r) {

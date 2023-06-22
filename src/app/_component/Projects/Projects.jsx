@@ -10,11 +10,20 @@ function Projects() {
         <Link href='#' target='_blank'>
           <span> Projet en cours - Prism Agency : </span>
 
-          <span> #Next.js #Responsive </span>
+          <span className={s.tags}> #Next.js #Responsive </span>
         </Link>
         <div className={s.description}>
-          Création d&apos;une application responsive en composants fonctionnels
-          sous Next.js.
+          Création d&apos;une application complète, responsive en composants
+          fonctionnels sous Next.js.
+        </div>
+        <Link href='#' target='_blank'>
+          <span> Mon portofolio : </span>
+
+          <span className={s.tags}> #Next.js #Responsive </span>
+        </Link>
+        <div className={s.description}>
+          Création d&apos;une application, relatant mon parcours et projets,
+          responsive en composants fonctionnels sous Next.js.
         </div>
         <Link
           href='https://pierre-jean-sappey-marinier.github.io/Kasa/'
@@ -22,7 +31,10 @@ function Projects() {
         >
           <span> Kasa - Openclassroom : </span>
 
-          <span> #React #CRA #Responsive </span>
+          <span className={s.tags}>
+            {' '}
+            #React.js #CRA #Responsive #SinglePageApplication{' '}
+          </span>
         </Link>
         <div className={s.description}>
           Création d&apos;une single page application responsive en composants
@@ -33,7 +45,7 @@ function Projects() {
         <Link href='' target='_blank'>
           <span> Mon Vieux Grimoire - Openclassroom : </span>
 
-          <span> #React #CRA #Responsive </span>
+          <span className={s.tags}> #Node.js #Express #MongoDB #Sécurité </span>
         </Link>
         <div className={s.description}>
           Conception de la partie Backend d&apos;une site de notation de livres
@@ -46,7 +58,7 @@ function Projects() {
         >
           <span> Motus - Perso : </span>
 
-          <span> #React #CRA #Responsive </span>
+          <span className={s.tags}> #React.js #Game #JoshCommeau </span>
         </Link>
         <div className={s.description}>
           Création d&apos;un jeu de motus en React.js
@@ -54,7 +66,10 @@ function Projects() {
         <Link href='' target='_blank'>
           <span> Sophie Photographe - Openclassroom : </span>
 
-          <span> #React #CRA #Responsive </span>
+          <span className={s.tags}>
+            {' '}
+            #JavaScript #Accessibilité #SEO #Optimisation{' '}
+          </span>
         </Link>
         <div className={s.description}>
           Création d&apos;une page web dynamique avec JavaScript en communiquant
@@ -69,7 +84,7 @@ function Projects() {
         >
           <span> Booki - Openclassroom : </span>
 
-          <span> #React #CRA #Responsive </span>
+          <span className={s.tags}> #HTML #CSS #Figma #Responsive </span>
         </Link>
         <div className={s.description}>
           Création de la page d&apos;accueil d&apos;une agence de voyage en HTML
@@ -82,10 +97,13 @@ function Projects() {
         >
           <span> Nina Carducci - Openclassroom : </span>
 
-          <span> #React #CRA #Responsive </span>
+          <span className={s.tags}>
+            {' '}
+            #Debugging #SEO #Accessibilité #Optimisation{' '}
+          </span>
         </Link>
         <div className={s.description}>
-          Correction du bug d&apos;un site web en React.js. Optimisation de
+          Correction de bugs d&apos;un site web en Javascript. Optimisation de
           l&apos;application et compilation optimisée avec le serveur de
           développement Vite. Amélioration du référencement (SEO) et de
           l&apos;accessibilité du site.

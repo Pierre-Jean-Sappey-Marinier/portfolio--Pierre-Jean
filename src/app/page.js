@@ -12,26 +12,29 @@ export default function Home() {
     document.getElementById(id).requestFullscreen();
   }
   return (
-    <main className={styles.main}>
-      <div className={styles.header}>
-        <div className={styles.nameAndSurname}>
-          <p className={styles.name}>SAPPEY-MARINIER</p>
-          <p className={styles.surname}>Pierre-Jean</p>
+    <>
+      <main className={styles.main}>
+        <div className={styles.header}>
+          <div className={styles.nameAndSurname}>
+            <p className={styles.name}>SAPPEY-MARINIER</p>
+            <p className={styles.surname}>Pierre-Jean</p>
+            <p className={styles.biographie}>Développeur JavaScript</p>
+          </div>
         </div>
-      </div>
-      <div className={styles.section}>
-        <Biographie />
-        <Skills />
-        {/* <Projects /> */}
-      </div>
-      {/* <div className={styles.boardSkill}> */}
-      {/* <BoardSkill /> */}
-      {/* </div> */}
-      <div className={styles.skills}>
-        {/* <Skills /> */}
-        <Projects />
-      </div>
+        <div className={styles.section}>
+          <Biographie />
+          <Skills />
+          {/* <Projects /> */}
+        </div>
+        {/* <div className={styles.boardSkill}> */}
+        {/* <BoardSkill /> */}
+        {/* </div> */}
+        <div className={styles.skills}>
+          {/* <Skills /> */}
+          <Projects />
+        </div>
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

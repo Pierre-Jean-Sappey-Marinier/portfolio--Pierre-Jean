@@ -1,7 +1,7 @@
 .container {
   // display: flex;
   width: 700px;
-  padding-bottom: 70px;
+  // padding-bottom: 70px;
   // padding-top: 100px;
 }
 .domaine {
@@ -43,7 +43,7 @@
 
 .title {
   font-size: 30px;
-  padding: 50px 0px 0px 20px;
+  padding: 50px 0px 0px 56px;
 }
 
 .resume {
@@ -54,9 +54,9 @@
   width: 2px;
   background: linear-gradient(0deg, #07339a, #188b00);
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -30px;
+  top: 6px;
+  bottom: 6px;
+  left: -24px;
 }
 .telechargement {
   display: flex;
@@ -118,4 +118,10 @@
 
 .resume {
   display: flex;
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 100%;
+  }
 }

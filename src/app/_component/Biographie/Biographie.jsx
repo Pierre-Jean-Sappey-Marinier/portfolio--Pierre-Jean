@@ -4,7 +4,7 @@ import s from './Biographie.module.scss';
 function Biographie() {
   return (
     <div className={s.container}>
-      <p className={s.biographie}>Développeur FrontEnd</p>
+      <p className={s.biographie}>Histoire</p>
       <span className={s.span}>
         <div className={s.presentation}>
           <p>

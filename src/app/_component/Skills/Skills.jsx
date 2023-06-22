@@ -8,7 +8,7 @@ import BoardSkill from '../BoardSkills/BoardSkill';
 function Skills() {
   return (
     <div className={s.container}>
-      <p className={s.title}>Compétences.</p>
+      <p className={s.title}>Compétences</p>
       <p className={s.h2}>Hard skills</p>
 
       <span className={s.span}>

@@ -5,12 +5,19 @@
   justify-content: center;
   align-items: start;
   padding: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   max-width: 1280px;
   // min-height: 100vh;
-  max-height: 700px;
   box-sizing: border-box;
+}
+.biographie {
+  display: flex;
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 200;
+  padding: 50px 0px 20px 42px;
+  justify-content: start;
+  align-items: start;
 }
 
 .description {
@@ -47,7 +54,7 @@
 }
 
 .name {
-  padding-left: 20px;
+  padding-left: 42px;
   align-items: start;
   font-size: 50px;
   // background: -webkit-linear-gradient(45deg, #00629f, #00ff95 80%);
@@ -57,7 +64,7 @@
 }
 
 .surname {
-  padding-left: 20px;
+  padding-left: 42px;
 
   align-items: start;
   font-size: 60px;
@@ -283,5 +290,17 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .section {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .biographie {
+    font-size: 40px;
   }
 }

@@ -12,12 +12,13 @@
   // padding: 50px 0px 20px 20px;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-left: 50px;
 }
 .list {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
-  padding-left: 20px;
+  padding-left: 50px;
   list-style-type: none;
   align-items: flex-start;
 
@@ -26,6 +27,11 @@
     font-size: 20px;
     font-weight: 500;
     padding-top: 20px;
+  }
+  .tags {
+    font-weight: 300;
+    // font-size: 15px;
+    padding-left: 20px;
   }
 
   a {
@@ -86,4 +92,23 @@
   color: #ffffff;
   font-size: 17px;
   font-weight: 100;
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 100%;
+  }
+  .list {
+    padding-left: 0px;
+  }
+  .list a {
+    border-color: #07339a;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+  }
+  .list a::before {
+  }
 }

@@ -4,13 +4,8 @@
 }
 
 .biographie {
-  display: flex;
-  color: #ffffff;
-  font-size: 80px;
-  font-weight: 200;
-  padding: 50px 0px 20px 20px;
-  justify-content: start;
-  align-items: start;
+  font-size: 30px;
+  padding: 50px 0px 54px 56px;
 }
 .presentation {
   color: #ffffff;
@@ -22,9 +17,9 @@
   width: 2px;
   background: linear-gradient(0deg, #07339a, #188b00);
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -30px;
+  top: 6px;
+  bottom: 6px;
+  left: -24px;
 }
 
 .span {
@@ -35,4 +30,10 @@
   line-height: 1.6;
   display: block;
   position: relative;
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 100%;
+  }
 }

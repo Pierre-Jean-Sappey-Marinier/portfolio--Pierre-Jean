@@ -40,9 +40,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className='footer-bottom'>
+      {/* <div className='footer-bottom'>
         <p>&copy; {new Date().getFullYear()} MonSite - Tous droits réservés</p>
-      </div>
+      </div> */}
     </footer>
   );
 };

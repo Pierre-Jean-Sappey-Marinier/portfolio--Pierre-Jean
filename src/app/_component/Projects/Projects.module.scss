@@ -1,7 +1,7 @@
 .container {
   // display: flex;
   padding-top: 50px;
-  width: 60%;
+  width: 80%;
 }
 
 .title {
@@ -10,8 +10,8 @@
   font-size: 50px;
   font-weight: 200;
   // padding: 50px 0px 20px 20px;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .list {
   display: flex;
@@ -20,6 +20,13 @@
   padding-left: 20px;
   list-style-type: none;
   align-items: flex-start;
+
+  span {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+  }
 
   a {
     // display: flex;
@@ -37,7 +44,7 @@
     content: '';
     height: 1px;
     width: 100%;
-    background: linear-gradient(90deg, #9a9807, #8b0000);
+    background: linear-gradient(90deg, #07339a, #188b00);
     opacity: 1;
     transition: all 0.3s ease-in-out;
     display: inline-block;
@@ -50,7 +57,7 @@
     content: '';
     height: 1px;
     width: 100%;
-    background: linear-gradient(0deg, #9a9807, #8b0000);
+    background: linear-gradient(0deg, #07339a, #188b00);
     opacity: 0;
     transition: all 0.3s ease-in-out;
     display: inline-block;
@@ -63,7 +70,7 @@
     content: ' ';
     width: 90px;
     height: 90px;
-    background: linear-gradient(135deg, #9a9807, #8b0000);
+    background: linear-gradient(135deg, #07339a, #188b00);
     opacity: 1;
     border-top-left-radius: 8px;
     transition: all 0.3s ease-in-out;

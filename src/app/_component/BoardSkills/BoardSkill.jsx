@@ -7,16 +7,6 @@ import Image from 'next/image';
 import s from './BoardSkill.module.scss';
 
 export default function BoardSkill() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleImageClick = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div className={s.container}>
       <p className={s.title}>L&apos;essentiel.</p>

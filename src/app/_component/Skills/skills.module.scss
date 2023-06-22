@@ -12,13 +12,19 @@
 
   // justify-content: center;
   align-items: center;
-  width: 35%;
+  width: 54%;
 
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+}
+.h2 {
+  font-size: 20px;
+  padding: 20px 0px 20px 56px;
+  font-weight: 200;
+  color: #ffffff;
 }
 .skills {
   display: flex;
@@ -26,6 +32,7 @@
   gap: 20px;
   font-weight: 100;
   width: 100%;
+  padding-left: 30px;
 
   ul {
     list-style: none;
@@ -33,18 +40,10 @@
     margin: 0;
   }
 }
-// .biographie {
-//   display: flex;
-//   color: #ffffff;
-//   font-size: 80px;
-//   font-weight: 200;
-//   padding: 50px 0px 20px 20px;
-//   justify-content: start;
-//   align-items: start;
-// }
+
 .title {
   font-size: 30px;
-  padding: 50px 0px 20px 20px;
+  padding: 50px 0px 0px 20px;
 }
 
 .resume {
@@ -53,12 +52,59 @@
 .span::before {
   content: ' ';
   width: 2px;
-  background: linear-gradient(0deg, #9a9807, #8b0000);
+  background: linear-gradient(0deg, #07339a, #188b00);
   position: absolute;
   top: 0;
   bottom: 0;
   left: -30px;
 }
+.telechargement {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.testbuttons {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+}
+
+.testbuttons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  // width: 100%;
+}
+.testbutton {
+  // width: 22px;
+}
+
+// .testbuttons::before {
+//   content: ' ';
+
+//   width: 2px;
+//   background: linear-gradient(0deg, #07339a, #188b00);
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: -30px;
+// }
 
 .span {
   position: relative;

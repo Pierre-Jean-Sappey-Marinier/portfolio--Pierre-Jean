@@ -15,8 +15,8 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.header}>
         <div className={styles.nameAndSurname}>
-          <p className={styles.name}>Pierre-Jean</p>
-          <p className={styles.surname}> SAPPEY-MARINIER</p>
+          <p className={styles.name}>SAPPEY-MARINIER</p>
+          <p className={styles.surname}>Pierre-Jean</p>
         </div>
       </div>
       <div className={styles.section}>
@@ -25,7 +25,7 @@ export default function Home() {
         {/* <Projects /> */}
       </div>
       {/* <div className={styles.boardSkill}> */}
-      <BoardSkill />
+      {/* <BoardSkill /> */}
       {/* </div> */}
       <div className={styles.skills}>
         {/* <Skills /> */}

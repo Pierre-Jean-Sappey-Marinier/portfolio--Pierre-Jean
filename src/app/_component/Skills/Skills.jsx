@@ -67,7 +67,7 @@ function Skills() {
         <div className={s.domaine}>
           <ul>
             <li>Gestion de projet :</li>
-            <li>Gestion d'équipe :</li>
+            <li>Gestion d&apos;équipe :</li>
             <li>Communication :</li>
             <li>Conformité du projet :</li>
             {/* <li>Rédaction de rapports :</li> */}
